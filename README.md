@@ -9,6 +9,7 @@ This document outlines the installation and usage of the SDK, including how to i
 
 Table of Contents:
 
+---
 1. Installation Instructions
       Prerequisites
       Installing the SDK via Maven
@@ -21,7 +22,8 @@ Table of Contents:
       DataSOASerialIncrementRequest
       DataSOASerialIncrementResponse
       DataUpdateRecordResponse
----
+
+   
 
 ## 1. Installation Instructions
 
