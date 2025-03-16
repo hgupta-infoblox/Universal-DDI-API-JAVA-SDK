@@ -90,7 +90,7 @@ To use this SDK, you first need to add it to your project dependencies. The SDK 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-3. API Reference
+## 3. API Reference
    
   3.1 ApiException
       Description: This class is used to represent an exception or error that occurs during an API call.
