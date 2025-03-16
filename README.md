@@ -7,6 +7,20 @@ The Universal DDI SDK (Dynamic DNS and IP Address Management SDK) is a Java-base
 
 This document outlines the installation and usage of the SDK, including how to integrate it into your Java projects and call its API methods.
 
+Table of Contents:
+
+1. Installation Instructions
+      Prerequisites
+      Installing the SDK via Maven
+2. API Reference
+      ApiException
+      DataCreateRecordResponse
+      DataListRecordResponse
+      DataReadRecordResponse
+      DataRecord
+      DataSOASerialIncrementRequest
+      DataSOASerialIncrementResponse
+      DataUpdateRecordResponse
 ---
 
 ## 1. Installation Instructions
@@ -32,11 +46,11 @@ To use this SDK, you first need to add it to your project dependencies. The SDK 
        <url>https://maven.pkg.github.com/hgupta-infoblox/Universal-DDI-API-JAVA-SDK</url>
      </repository>
    </repositories>
+   ```
 
 2. Add the dependency to your pom.xml: Add the following dependency under the <dependencies> section of your pom.xml. Make sure to use the correct version number (for example, 1.0-SNAPSHOT or 1.0.0).
 
-xml
-Copy
+```xml
 <dependencies>
   <dependency>
     <groupId>com.info.ddi</groupId>
@@ -44,35 +58,36 @@ Copy
     <version>1.0-SNAPSHOT</version>  <!-- Update this version as needed -->
   </dependency>
 </dependencies>
+```
 
 3. Authentication (GitHub Token): To access the private repository, you need to authenticate with your GitHub credentials. If you are using GitHub Packages for Maven, authenticate by adding your GitHub personal access token to your settings.xml file, which is located in the .m2 directory of your Maven installation.
 
-Example: settings.xml:
+   Example: settings.xml:
 
-xml
-Copy
-<settings>
-  <servers>
-    <server>
-      <id>github</id>
-      <username>your-github-username</username>
-      <password>your-github-token</password>
-    </server>
-  </servers>
-</settings>
-Replace your-github-username and your-github-token with your actual GitHub username and token.
+         <settings>
+           <servers>
+             <server>
+               <id>github</id>
+               <username>your-github-username</username>
+               <password>your-github-token</password>
+             </server>
+           </servers>
+         </settings>
+   
+   Replace your-github-username and your-github-token with your actual GitHub username and token.
 
 1.3 Install the Dependency
-  Once the pom.xml is updated, run the following Maven command to download the SDK dependency and install it:
+    Once the pom.xml is updated, run the following Maven command to download the SDK dependency and install it:
 
-    > mvn clean install
+       > mvn clean install
 
-This will download the SDK from GitHub Packages into your local Maven repository.
+   This will download the SDK from GitHub Packages into your local Maven repository.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3. API Reference
+   
   3.1 ApiException
       Description: This class is used to represent an exception or error that occurs during an API call.
     Usage:
