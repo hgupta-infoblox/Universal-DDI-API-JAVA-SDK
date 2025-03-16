@@ -7,9 +7,11 @@ The Universal DDI SDK (Dynamic DNS and IP Address Management SDK) is a Java-base
 
 This document outlines the installation and usage of the SDK, including how to integrate it into your Java projects and call its API methods.
 
-Table of Contents:
+
 
 ---
+Table of Contents:
+
 1. Installation Instructions
       Prerequisites
       Installing the SDK via Maven
@@ -52,15 +54,15 @@ To use this SDK, you first need to add it to your project dependencies. The SDK 
 
 2. Add the dependency to your pom.xml: Add the following dependency under the <dependencies> section of your pom.xml. Make sure to use the correct version number (for example, 1.0-SNAPSHOT or 1.0.0).
 
-```xml
-<dependencies>
-  <dependency>
-    <groupId>com.info.ddi</groupId>
-    <artifactId>ddi-sdk</artifactId>
-    <version>1.0-SNAPSHOT</version>  <!-- Update this version as needed -->
-  </dependency>
-</dependencies>
-```
+   ```xml
+   <dependencies>
+     <dependency>
+       <groupId>com.info.ddi</groupId>
+       <artifactId>ddi-sdk</artifactId>
+       <version>1.0-SNAPSHOT</version>  <!-- Update this version as needed -->
+     </dependency>
+   </dependencies>
+   ```
 
 3. Authentication (GitHub Token): To access the private repository, you need to authenticate with your GitHub credentials. If you are using GitHub Packages for Maven, authenticate by adding your GitHub personal access token to your settings.xml file, which is located in the .m2 directory of your Maven installation.
 
